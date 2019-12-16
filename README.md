@@ -1,4 +1,4 @@
-# Joystream Whitepaper
+<p align="center"><img src="img/whitepaper_new.svg"></p>
 
 See `paper.pdf` in repo, or click this [LINK](https://github.com/Joystream/whitepaper/blob/master/paper.pdf)
 
