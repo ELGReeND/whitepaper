@@ -317,7 +317,7 @@ There are two types of fee model modes available in the protocol.
 
     \item[-] \textbf{Transactional:}  The normal transactional pay-per-use model can be found in a majority of currency-focused systems such as Bitcoin. This mode applies to basic operations such as moving fund.
 
-    \item[-] \textbf{Block Range Action Quota (BRAQ):} An \textit{action} refers to a combination of an actor, role, and transaction type. This model prevents a given action from occurring more than a given number of time over a given number of blocks. Successfully issuing such transactions within the given limits does not involve marginal outlay for the given actor.
+    \item[-] \textbf{Block Range Action Quota (BRAQ):} An \textit{action} refers to a combination of an actor, role, and transaction type. This model prevents a given action from occurring more than a given number of times over a given number of blocks. Successfully issuing such transactions within the given limits does not involve marginal outlay for the given actor.
 
 \end{itemize}
 
@@ -607,7 +607,7 @@ Each group pays out a reward to all group members at a given interval referred t
 
 There are two scenarios under which a new group lead may be introduced in a given group: in the case where there is no existing lead, which is only the case while bootstrapping, and is referred to as \textit{installation}; when an existing lead is leaving their position by their own initiation or alternatively by initiative from the council, and a new one is to be introduced. These are referred to as \textit{replacement} and \textit{eviction}, respectively.
 
-In all cases, candidates for a group lead role come from a list on the platform called for the given group referred to as the \textit{group lead candidate list}. Members can enter the list by staking the amount required to hold the group lead position for the given group. Each list is a fixed size and, if the number of potential candidates who have staked is greater, then inclusion is determined by how much has been staked beyond the limit, although the actual staked amount when introduced a lead is always the staking limit.
+In all cases, candidates for a group lead role come from a list on the platform for the given group, referred to as the \textit{group lead candidate list}. Members can enter the list by staking the amount required to hold the group lead position for the given group. Each list is a fixed size and, if the number of potential candidates who have staked is greater, then inclusion is determined by how much has been staked beyond the limit, although the actual staked amount when introduced a lead is always the staking limit.
 
 %TODO: We need to write more here when the individual group schemes have been finalised
 
@@ -615,12 +615,12 @@ In all cases, candidates for a group lead role come from a list on the platform 
 
 \subsection{Overview}
 
-As mentioned before, for example, in section \ref{sec:member}, it should be possible to onboard users who do not hold any tokens. This activity, referred to as  \textit{screening}, allows the platform to accommodate new users who wish to try the platform within certain constraints. However, the combination of no robust identity system and allowing users to consume resources without paying on the margin creates its own set of new problems. These resources need not only be in the form of tangibles such as compute and storage, but can also be things like peer member attention. Not only does this result in wasteful overutilisation but, perhaps, more importantly, it allows platform participants to shape their own payouts by at a low cost, since resource use is often tied to payouts. For example, viewing content will divert a larger share of payout to the publisher.
+As mentioned before, for example, in section \ref{sec:member}, it should be possible to onboard users who do not hold any tokens. This activity, referred to as  \textit{screening}, allows the platform to accommodate new users who wish to try the platform within certain constraints. However, the combination of no robust identity system and allowing users to consume resources without paying on the margin creates its own set of new problems. These resources need not only be in the form of tangibles such as compute and storage, but can also be things like peer member attention. Not only does this result in wasteful overutilisation but, perhaps, more importantly, it allows platform participants to shape their own payouts at a low cost, since resource use is often tied to payouts. For example, viewing content will divert a larger share of payout to the publisher.
 
 The Joystream protocol also suffers from these ills in principle, at least under a certain set of policy choices. There is no final solution to this without dealing with the fundamental identity and pricing preconditions. None the less, it is critical to equip the platform with a baseline capacity to engage in the presumed cat-and-mouse dynamic with such abuse to reduce the feasibility and cost of attacks.
 
 This is achieved by two measures: first, there is a capacity to block access to the platform in various ways. This activity is termed \textit{suspending} and specifically prevents the relevant actor from being able to participate in the platform through base membership actions.
-Second, when anyone is onboard through screening, the corresponding platform actor who onboard with them is recorded and can be punished for a long time in  future, with a suitable bonding period if the abuse is uncovered.
+Second, when anyone is onboarded through screening, the corresponding platform actor who onboarded them is recorded and can be punished for a long time in  future, with a suitable bonding period if the abuse is uncovered.
 
 \subsection{Working groups}
 
@@ -656,7 +656,7 @@ A new member can be added through screening authority by presenting a signature 
 
 \subsection{Suspension} \label{sec:suspension}
 
-The organization and principles of this working group is identical to the screening working group. There are three distinct forms of suspension that can be initiated, namely
+The organization and principles of this working group are identical to the screening working group. There are three distinct forms of suspension that can be initiated, namely
 
 \begin{itemize}
   \item[-] \textbf{Individual:} A specific member can be suspended by setting the appropriate membership field.
@@ -848,7 +848,7 @@ Lastly, a member downloading a data object is represented by a \textit{download 
 
       \item[-] \textbf{CID:} ID for content.
 
-      \item[-] \textbf{Consumer:} ID for for member downloading.
+      \item[-] \textbf{Consumer:} ID for member downloading.
 
       \item[-] \textbf{Distributor:} ID for distributor that distributes the content.
 
